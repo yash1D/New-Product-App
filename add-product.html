@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/main.css">
+        <title>add product</title>
+    </head>
+    <body>
+        <header class ="firstheader">
+
+            <nav class="nav">
+
+                <ul class="ul">
+
+                    <li class="li-tag"><a href="/">Shop</a></li>
+
+                    <li class="li-tag"><a href="/admin/add-product">Add product</a></li>
+
+                    <li class="li-tag"><a href="/log-in/log-in">contact us</a></li>
+
+                </ul>
+
+            </nav>
+
+        </header>
+
+        <main>
+
+            <form onsubmit="localStorage.setItem(`Title`,
+                document.getElementById(`Title`).value)" action="/admin/add-product"
+                method="POST" class="product-form">
+
+                <div class="input-div">
+
+                    <label for="title">Title</label>
+
+                    <input id="Title"  type="text" name="title" />
+
+                    <button type="submit">add Product</button>
+
+                </div>
+
+            </form>
+
+        </main>
+
+    </body>
+
+</html>
